@@ -1,6 +1,10 @@
 ---
 # This Ansible playbook is used to deploy Nginx as data node for CDS.
+<<<<<<< HEAD
 - name: Install Nginx
+=======
+- name: Install Nginx as CDS data node
+>>>>>>> 3d07079 (initial setup)
   hosts: all
   become: yes
 
@@ -10,6 +14,18 @@
       with_first_found:
        - custom.yml
        - null.yml
+<<<<<<< HEAD
   roles:
     - role: nginxinc.nginx
+=======
+    # - name: "Ansible | List all known variables and facts"
+    #   debug:
+    #     var: hostvars['192.168.50.44']
+  tasks:
+    - name: Install NGINX
+      ansible.builtin.include_role:
+        name: ansible-role-nginx
+      vars:
+        nginx_install_from: os_repository
+>>>>>>> 3d07079 (initial setup)
    
