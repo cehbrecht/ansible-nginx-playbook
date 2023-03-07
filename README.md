@@ -5,6 +5,9 @@ Ansible playbook to install nginx as data node for CDS
 Using official nginx role:
 https://github.com/nginxinc/ansible-role-nginx
 
+Role for ssl certs:
+https://galaxy.ansible.com/galaxyproject/self_signed_certs
+
 ## Test with vagrant
 
 Spin up AlmaLinux 8.x VM:
