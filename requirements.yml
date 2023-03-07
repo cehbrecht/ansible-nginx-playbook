@@ -1,6 +1,5 @@
 ---
 roles:
-  # - name: geerlingguy.repo-epel
   - name: nginxinc.nginx
   # - name: jdauphant.ssl-certs
 

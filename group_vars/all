@@ -1,3 +1,7 @@
 ---
 # nginx
 nginx_install_from: os_repository
+nginx_logrotate_conf_enable: true
+
+# custom config
+nginx_conf_path: /etc/nginx
