@@ -20,18 +20,10 @@ Vagrant.configure("2") do |config|
     data.vm.box = "bento/almalinux-8"
     data.vm.hostname = "data.local"
     data.vm.network "private_network", ip: "192.168.128.100"
-<<<<<<< HEAD
     # data.vm.provision 'ansible' do |ansible|
     #   ansible.playbook = 'playbook.yml'
     #   ansible.verbose = "v"
     #   ansible.host_key_checking = false
     # end
-=======
-    data.vm.provision 'ansible' do |ansible|
-      ansible.playbook = 'playbook.yml'
-      ansible.verbose = "v"
-      ansible.host_key_checking = false
-    end
->>>>>>> 3d07079 (initial setup)
   end
 end

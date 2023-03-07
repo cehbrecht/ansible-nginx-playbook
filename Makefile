@@ -17,14 +17,6 @@ roles:
 	ansible-galaxy install -r requirements.yml
 	ansible-galaxy collection install -r requirements.yml
 
-<<<<<<< HEAD
-=======
-.PHONY: quick
-quick: roles
-	echo "Installing PyWPS application with Ansible [skip conda tasks] ..."
-	ansible-playbook -c local --skip conda -i hosts playbook.yml
-
->>>>>>> 3d07079 (initial setup)
 .PHONY: play
 play: roles
 	echo "Installing PyWPS application with Ansible [all tasks] ..."
