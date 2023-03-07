@@ -6,7 +6,7 @@ Using official nginx role:
 https://github.com/nginxinc/ansible-role-nginx
 
 Role for ssl certs:
-https://galaxy.ansible.com/galaxyproject/self_signed_certs
+https://galaxy.ansible.com/jdauphant/ssl-certs
 
 ## Test with vagrant
 
